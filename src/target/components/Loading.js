@@ -1,8 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import searching from '../../assets/searching.svg'
-import notFound from '../../assets/notFound.svg'
+import searching from '../../utils/images/searching.svg'
+import notFound from '../../utils/images/notFound.svg'
 
 //Redux
 import { connect } from 'react-redux';

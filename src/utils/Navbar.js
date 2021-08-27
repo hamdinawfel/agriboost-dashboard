@@ -24,7 +24,7 @@ import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import PeopleIcon from '@material-ui/icons/People';
 import AdjustIcon from '@material-ui/icons/Adjust';
 //assets
-import banner from '../assets/banner.jpg'
+import banner from './images/banner.jpg'
 //Redux
 import { connect } from 'react-redux';
 import { logoutUser } from '../auth/actions';

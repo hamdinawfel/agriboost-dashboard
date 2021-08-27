@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
-// import banner from '../assets/banner.jpg'
+import banner from '../utils/images/banner.jpg'
 
 //Redux
 import { connect } from 'react-redux';
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems:'center',
     userSelect:'none',
     padding:'5px 100px 5px 100px',
-    // boxShadow: '0px 0px 8px rgba(91, 137, 158, 0.7)',
+    boxShadow: '0px 0px 8px rgba(91, 137, 158, 0.7)',
     [theme.breakpoints.down('sm')]: {
         padding:'0 20x',
       height:70,
@@ -103,7 +103,7 @@ const handleLoginUser = (e) => {
     <React.Fragment>
           {!props.admin.user.admin=== true?null:<Redirect to='/' />}
           <AppBar position="relative" color="default" elevation={0} className={classes.appBar}>
-          {/* <img src={banner} alt="banner" className={classes.banner} /> */}
+          <img src={banner} alt="banner" className={classes.banner} />
         </AppBar>
         <Container className={classes.root} component="main" maxWidth="xs">
       <CssBaseline />
