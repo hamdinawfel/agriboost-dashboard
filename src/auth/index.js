@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Redirect } from 'react-router'
 
 //M-UI
@@ -11,11 +11,11 @@ import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
+import banner from '../assets/banner.jpg'
+
 //Redux
 import { connect } from 'react-redux';
 import { loginUser, clearErrors} from './actions';
-//
-import banner from '../assets/banner.jpg'
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor:'#fff',
@@ -103,7 +103,7 @@ const handleLoginUser = (e) => {
     <React.Fragment>
           {!props.admin.user.admin=== true?null:<Redirect to='/' />}
           <AppBar position="relative" color="default" elevation={0} className={classes.appBar}>
-          <img src={banner} alt="" className={classes.banner} />
+          <img src={banner} alt="banner" className={classes.banner} />
         </AppBar>
         <Container className={classes.root} component="main" maxWidth="xs">
       <CssBaseline />
