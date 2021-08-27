@@ -1,0 +1,111 @@
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+
+import Grid from '@material-ui/core/Grid';
+//Redux
+import { connect } from 'react-redux';
+const useStyles = makeStyles((theme) => ({
+    container:{
+        display: 'flex', 
+        justifyContent:'space-between',  
+        backgroundColor:'#f5f5f5',
+        borderRadius:2, 
+        padding:5
+      },
+      item:{
+        background:'#fff',
+        border:'1px solid #f5f5f5',
+        display:'flex',
+        alignItems:'center',
+        padding:'0 5px', 
+        justifyContent: 'flex-end'
+      }
+  }));
+function SupplementaryInfo(props) {
+  const classes = useStyles();
+
+  return (
+    <Grid container className={classes.container}>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            {props.details.city} 
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+                الولاية  
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            {props.details.village} 
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            المعتمدية	
+                </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            {props.details.address} 
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            العنوان	
+                </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            {props.details.civilStatus} 
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            الحالة المدنية
+                </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            {props.details.edicationalLevel} 
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            المستوى التعليمي 
+                </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            {props.details.lastStadyLevel} 
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            تاريخ آخر مستوى تعليمي
+                </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+            {props.details.email} 
+            </Typography>
+        </Grid>
+        <Grid item xs={6} className={classes.item}>
+            <Typography component="p" >
+                عنوان البريد الإلكتروني
+                </Typography>
+        </Grid>
+    </Grid>
+  );
+}
+
+const mapStateToProps = (state) => ({
+    details: state.candidates.details,
+  });
+  
+  export default connect(
+    mapStateToProps,
+    null
+  )(SupplementaryInfo);
