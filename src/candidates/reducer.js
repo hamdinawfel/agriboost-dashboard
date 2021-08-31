@@ -1,9 +1,6 @@
 import {
     LOADING_CANDIDATES,
     GET_CANDIDATES,
-    //
-    LOADING_CANDIDATE_DETAILS,
-    GET_CANDIDATE_DETAILS,
     SET_ERRORS,
     //COUNT
     LOADING_SUBMITTED_COUNT,
@@ -25,9 +22,6 @@ import {
     const initialState = {
       loading: false,
       data: [],
-      loadingDetails:false,
-      details:{},
-      criteriaList : [],
       errors: false,
       //COUNT
       loadingSubmittedCount:false,
@@ -58,18 +52,6 @@ import {
             ...state,
             data: action.payload,
             loading: false,
-          };
-        case LOADING_CANDIDATE_DETAILS:
-          return {
-            ...state,
-            loadingDetails: true
-          };
-        case GET_CANDIDATE_DETAILS:
-          return {
-            ...state,
-            details: action.payload,
-            criteriaList: action.payload.criteriaList,
-            loadingDetails: false,
           };
           //COUNT
           case LOADING_SUBMITTED_COUNT:

@@ -81,18 +81,13 @@ function SettingPanel(props) {
      }
    }
    //change pw
-  
-   const [currentPassword, setCurrentPassword] = useState('');
    const [newPassword, setNewPassword] = useState('');
-   const [confirmPassword, setConfirmPassword] = useState('');
    const [ error, setError ] = useState({});
    
    const handleChangePassword =(e) =>{
        e.preventDefault()
             const  passwordData = {
-            currentPassword,
             newPassword,
-            confirmPassword
             }
             props.changePassword(passwordData);
             setUpadetedSection('password');
@@ -107,7 +102,7 @@ function SettingPanel(props) {
         <div className={classes.root}>
             <Grid container className={classes.userProfile}>
             <Grid item md={3} xs={12}>
-              <p className={classes.section}>Editez votre Profil</p>
+              <p className={classes.section}>Editez votre Profile</p>
             </Grid>
             <Grid item md={9} xs={12}>
                <form className={classes.formBox} onSubmit={handleEditName}>
@@ -146,11 +141,11 @@ function SettingPanel(props) {
         </Grid>
             <Grid container className={classes.userProfile}>
             <Grid item md={3} xs={12}>
-              <p className={classes.section}>Mot de Passe</p>
+              <p className={classes.section}>Changer votre Mot de Passe</p>
             </Grid>
             <Grid item md={9}  xs={12}>
                <form className={classes.formBox} onSubmit={handleChangePassword}>
-                <p style={{margin:'0 0 20px 0'}}>Mot de passe actuel</p>
+                <p style={{margin:'0 0 20px 0'}}>Mot de passe</p>
                 <TextField 
                     style={{width:300}}
                     required

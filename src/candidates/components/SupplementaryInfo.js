@@ -3,8 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
-//Redux
-import { connect } from 'react-redux';
+
 const useStyles = makeStyles((theme) => ({
     container:{
         display: 'flex', 
@@ -22,14 +21,14 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'flex-end'
       }
   }));
-function SupplementaryInfo(props) {
+  export default  function SupplementaryInfo(props) {
   const classes = useStyles();
 
   return (
     <Grid container className={classes.container}>
         <Grid item xs={6} className={classes.item}>
             <Typography component="p" >
-            {props.details.city} 
+            {props.city} 
             </Typography>
         </Grid>
         <Grid item xs={6} className={classes.item}>
@@ -39,7 +38,7 @@ function SupplementaryInfo(props) {
         </Grid>
         <Grid item xs={6} className={classes.item}>
             <Typography component="p" >
-            {props.details.village} 
+            {props.village} 
             </Typography>
         </Grid>
         <Grid item xs={6} className={classes.item}>
@@ -49,7 +48,7 @@ function SupplementaryInfo(props) {
         </Grid>
         <Grid item xs={6} className={classes.item}>
             <Typography component="p" >
-            {props.details.address} 
+            {props.address} 
             </Typography>
         </Grid>
         <Grid item xs={6} className={classes.item}>
@@ -59,7 +58,7 @@ function SupplementaryInfo(props) {
         </Grid>
         <Grid item xs={6} className={classes.item}>
             <Typography component="p" >
-            {props.details.civilStatus} 
+            {props.civilStatus} 
             </Typography>
         </Grid>
         <Grid item xs={6} className={classes.item}>
@@ -69,7 +68,7 @@ function SupplementaryInfo(props) {
         </Grid>
         <Grid item xs={6} className={classes.item}>
             <Typography component="p" >
-            {props.details.edicationalLevel} 
+            {props.edicationalLevel} 
             </Typography>
         </Grid>
         <Grid item xs={6} className={classes.item}>
@@ -79,7 +78,7 @@ function SupplementaryInfo(props) {
         </Grid>
         <Grid item xs={6} className={classes.item}>
             <Typography component="p" >
-            {props.details.lastStadyLevel} 
+            {props.lastStadyLevel} 
             </Typography>
         </Grid>
         <Grid item xs={6} className={classes.item}>
@@ -89,7 +88,7 @@ function SupplementaryInfo(props) {
         </Grid>
         <Grid item xs={6} className={classes.item}>
             <Typography component="p" >
-            {props.details.email} 
+            {props.email} 
             </Typography>
         </Grid>
         <Grid item xs={6} className={classes.item}>
@@ -100,12 +99,3 @@ function SupplementaryInfo(props) {
     </Grid>
   );
 }
-
-const mapStateToProps = (state) => ({
-    details: state.candidates.details,
-  });
-  
-  export default connect(
-    mapStateToProps,
-    null
-  )(SupplementaryInfo);

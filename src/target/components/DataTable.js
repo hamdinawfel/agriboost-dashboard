@@ -10,11 +10,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
-import Typography from '@material-ui/core/Typography';
 //Icons
 import CloseIcon from '@material-ui/icons/Close';
 import DoneIcon from '@material-ui/icons/Done';
@@ -26,7 +24,6 @@ import SocialInfo from '../../candidates/components/SocialInfo'
 import Title from '../../candidates/components/Title'
 //Redux
 import { connect } from 'react-redux';
-import { getCandidateDetails } from '../../candidates/actions';
 import { editCandidateState } from '../actions';
 
 const useRowStyles = makeStyles({
@@ -61,12 +58,7 @@ function Row(props) {
   const [ open, setOpen] = React.useState(false);
   const [ edit, setEdit] = React.useState(false);
   const [ status, setStatus] = React.useState('');
-  
-  const handleGetDetails = (candidateId) => {
-    props.getCandidateDetails(candidateId)
-    setOpen(!open);
-    setStatus('');
-  }
+
   const handleEditCandidateState = (candidateId, condidateCin) => {
     props.editCandidateState(candidateId, {status}, condidateCin)
   }
@@ -75,7 +67,7 @@ function Row(props) {
     <React.Fragment>
       <TableRow className={classes.root} style={{borderBottom: '1px solid #eee !important'}} >
         <TableCell>
-          <IconButton aria-label="expand row" size="small" onClick={()=>handleGetDetails(row._id)}>
+          <IconButton aria-label="expand row" size="small" onClick={()=>setOpen(!open)}>
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
@@ -133,24 +125,33 @@ function Row(props) {
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box margin={1} style={{borderBottom: '1px solid #F5F5F5', paddingBottom:5}}>
-              {!props.loadingDetails?
                 <Grid container>
                   <Grid item xs={12}>
                     <Title title="الحالة الإجتماعية" />
-                    <SocialInfo />
+                    <SocialInfo criteriaList={row.criteriaList}/>
                   </Grid>
                   <Grid item xs={6} style={{padding:'0 5px'}}>
                     <Title title="المعطيات الشخصية" />
-                    <PersonelInfo />
+                    <PersonelInfo 
+                      firstName={row.firstName}
+                      lastName={row.lastName}
+                      cin={row.cin}
+                      fingerPrint={row.fingerPrint}
+                      birthDay={row.birthDay}
+                      sexe={row.sexe}/>
                   </Grid>
                    <Grid item xs={6} style={{padding:'0 5px'}}>
                      <Title title="المعطيات التكميلية" />
-                     <SupplementaryInfo />
+                     <SupplementaryInfo 
+                        city={row.city}
+                        village={row.village}
+                        address={row.address}
+                        civilStatus={row.civilStatus}
+                        edicationalLevel={row.edicationalLevel}
+                        lastStadyLevel={row.lastStadyLevel}
+                        email={row.email}/>
                    </Grid>
                 </Grid>
-                :
-                <CircularProgress  style={{display:'block', margin:'0 auto'}}/>
-              }
             </Box>
           </Collapse>
         </TableCell>
@@ -179,7 +180,6 @@ function DataTable(props) {
             <Row 
                 row={props.target.candidate}
                 editCandidateState={props.editCandidateState}
-                getCandidateDetails={props.getCandidateDetails}
             />
         </TableBody>
     </Table>
@@ -188,10 +188,8 @@ function DataTable(props) {
 
 const mapStateToProps = (state) => ({
     target: state.target,
-    candidates : state.candidates
   });
   const mapActionsToProps = {
-    getCandidateDetails,
     editCandidateState
   };
   export default connect(

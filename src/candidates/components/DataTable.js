@@ -10,11 +10,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
-import Typography from '@material-ui/core/Typography';
 //Icons
 import CloseIcon from '@material-ui/icons/Close';
 import DoneIcon from '@material-ui/icons/Done';
@@ -26,7 +24,7 @@ import SocialInfo from './SocialInfo'
 import Title from './Title'
 //Redux
 import { connect } from 'react-redux';
-import { getCandidateDetails, editCandidateState } from '../actions';
+import { editCandidateState } from '../actions';
 
 const useRowStyles = makeStyles({
   root: {
@@ -61,11 +59,6 @@ function Row(props) {
   const [ edit, setEdit] = React.useState(false);
   const [ status, setStatus] = React.useState('');
   
-  const handleGetDetails = (candidateId) => {
-    props.getCandidateDetails(candidateId)
-    setOpen(!open);
-    setStatus('');
-  }
   const handleEditCandidateState = (candidateId) => {
     props.editCandidateState(candidateId, {status}, props.page, props.route)
   }
@@ -74,8 +67,8 @@ function Row(props) {
     <React.Fragment>
       <TableRow className={classes.root} style={{borderBottom: '1px solid #eee !important'}} >
         <TableCell>
-          <IconButton aria-label="expand row" size="small" onClick={() => handleGetDetails(props.row._id)}>
-            {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+          <IconButton aria-label="expand row" size="small" onClick={()=>setOpen(!open)}>
+            { open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
         <TableCell component="th" scope="row">
@@ -130,26 +123,37 @@ function Row(props) {
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
-          <Collapse in={open} timeout="auto" unmountOnExit>
+          <Collapse in={ open } timeout="auto" unmountOnExit>
             <Box margin={1} style={{borderBottom: '1px solid #F5F5F5', paddingBottom:5}}>
-              {!props.loadingDetails?
                 <Grid container>
                   <Grid item xs={12}>
                     <Title title="الحالة الإجتماعية" />
-                    <SocialInfo />
+                    <SocialInfo criteriaList={row.criteriaList}/>
                   </Grid>
                   <Grid item xs={6} style={{padding:'0 5px'}}>
                     <Title title="المعطيات الشخصية" />
-                    <PersonelInfo />
+                    <PersonelInfo 
+                      firstName={row.firstName}
+                      lastName={row.lastName}
+                      cin={row.cin}
+                      fingerPrint={row.fingerPrint}
+                      birthDay={row.birthDay}
+                      sexe={row.sexe}
+                      />
                   </Grid>
                    <Grid item xs={6} style={{padding:'0 5px'}}>
                      <Title title="المعطيات التكميلية" />
-                     <SupplementaryInfo />
+                     <SupplementaryInfo 
+                        city={row.city}
+                        village={row.village}
+                        address={row.address}
+                        civilStatus={row.civilStatus}
+                        edicationalLevel={row.edicationalLevel}
+                        lastStadyLevel={row.lastStadyLevel}
+                        email={row.email}
+                      />
                    </Grid>
                 </Grid>
-                :
-                <CircularProgress  style={{display:'block', margin:'0 auto'}}/>
-              }
             </Box>
           </Collapse>
         </TableCell>
@@ -182,7 +186,6 @@ function DataTable(props) {
                     index={ props.candidates.data.indexOf(row) +1 +(1* (props.page -1)*10)}
                     page={props.page}
                     route={props.route}
-                    getCandidateDetails={props.getCandidateDetails}
                     editCandidateState={props.editCandidateState}
                     loadingDetails={props.candidates.loadingDetails} />
             )}
@@ -195,7 +198,6 @@ const mapStateToProps = (state) => ({
     candidates: state.candidates,
   });
   const mapActionsToProps = {
-    getCandidateDetails,
     editCandidateState
   };
   export default connect(

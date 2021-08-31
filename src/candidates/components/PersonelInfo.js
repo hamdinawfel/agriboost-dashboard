@@ -3,8 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
-//Redux
-import { connect } from 'react-redux';
+
 const useStyles = makeStyles((theme) => ({
     container:{
         display: 'flex', 
@@ -22,14 +21,14 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'flex-end'
       }
   }));
-function PersonelInfo(props) {
+  export default function PersonelInfo(props) {
   const classes = useStyles();
 
   return (
     <Grid container className={classes.container}>
             <Grid item xs={6} className={classes.item}>
                 <Typography component="p" >
-                {props.details.firstName}  {props.details.lastName} 
+                {props.firstName}  {props.lastName} 
                 </Typography>
             </Grid>
             <Grid item xs={6} className={classes.item}>
@@ -39,7 +38,7 @@ function PersonelInfo(props) {
             </Grid>
             <Grid item xs={6} className={classes.item}>
                 <Typography component="p" >
-                {props.details.cin} 
+                {props.cin} 
                 </Typography>
             </Grid>
             <Grid item xs={6} className={classes.item}>
@@ -49,7 +48,7 @@ function PersonelInfo(props) {
             </Grid>
             <Grid item xs={6} className={classes.item}>
                 <Typography component="p" >
-                {props.details.fingerPrint} 
+                {props.fingerPrint} 
                 </Typography>
             </Grid>
             <Grid item xs={6} className={classes.item}>
@@ -59,7 +58,7 @@ function PersonelInfo(props) {
             </Grid>
             <Grid item xs={6} className={classes.item}>
                 <Typography component="p" >
-                {props.details.birthDay} 
+                {props.birthDay} 
                 </Typography>
             </Grid>
             <Grid item xs={6} className={classes.item}>
@@ -69,7 +68,7 @@ function PersonelInfo(props) {
             </Grid>
             <Grid item xs={6} className={classes.item}>
                 <Typography component="p" >
-                {props.details.sexe} 
+                {props.sexe} 
                 </Typography>
             </Grid>
             <Grid item xs={6} className={classes.item}>
@@ -80,12 +79,3 @@ function PersonelInfo(props) {
         </Grid>
   );
 }
-
-const mapStateToProps = (state) => ({
-    details: state.candidates.details,
-  });
-  
-  export default connect(
-    mapStateToProps,
-    null
-  )(PersonelInfo);

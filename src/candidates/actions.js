@@ -1,9 +1,7 @@
 import {
     LOADING_CANDIDATES,
     GET_CANDIDATES,
-    //
-    LOADING_CANDIDATE_DETAILS,
-    GET_CANDIDATE_DETAILS,
+  
     EDIT_CANDIDTATE_STATE,
     SET_ERRORS,
     //COUNT
@@ -113,23 +111,7 @@ export const getFinalCandidates = (page) => (dispatch) => {
   };
 
 
-export const getCandidateDetails = (candidateId) => (dispatch) => {
-    dispatch({ type: LOADING_CANDIDATE_DETAILS });
-    axios
-    .get(`${process.env.REACT_APP_API_URL}/condidates/admin/${candidateId}`)
-      .then((res) => {
-        dispatch({
-          type: GET_CANDIDATE_DETAILS,
-          payload: res.data
-        });
-      })
-      .catch((err) => {
-        dispatch({
-          type: SET_ERRORS,
-          payload: []
-        });
-      });
-  };
+
 // Edit candidate status depond on the route
   export const editCandidateState = (condidateId, newData, page, route) => (dispatch) => {
     axios

@@ -39,7 +39,6 @@ export const getUserData = () => (dispatch) => {
   dispatch({ type: LOADING_USER });
  const  token = localStorage.getItem("accessToken");
   const decodedToken = jwtDecode(token);
-  console.log(decodedToken);
   axios
     .get(`${process.env.REACT_APP_API_URL}/users/admin/${decodedToken._id}`)
     .then((res) => {
