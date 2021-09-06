@@ -96,20 +96,20 @@ function Row(props) {
                   InputLabelProps={{
                   classes: { root: classes.labelRoot, shrink: classes.shrink }
                   }}>
-                      <MenuItem  value="في مرحلة الفرز" dir="rtl">
-                      في مرحلة الفرز
+                      <MenuItem  value="مطلبكم في مرحلة الفرز" dir="rtl">
+                      مطلبكم في مرحلة الفرز
                       </MenuItem>
-                      <MenuItem  value="حضي بالرفض" dir="rtl">
-                      حضي بالرفض
+                      <MenuItem  value="نأسف لعدم قبول مطلبكم" dir="rtl">
+                      نأسف لعدم قبول مطلبكم
                       </MenuItem>
-                      <MenuItem  value="في قائمة الإنتضار" dir="rtl">
-                      في قائمة الإنتضار 
+                      <MenuItem  value="مطلبكم في قائمة الإنتضار" dir="rtl">
+                      مطلبكم في قائمة الإنتضار 
                       </MenuItem>
-                      <MenuItem  value="حضي بالقبول مبدئيا" dir="rtl">
-                      حضي بالقبول مبدئيا
+                      <MenuItem  value="حضي مطلبكم بالقبول مبدئيا" dir="rtl">
+                      حضي مطلبكم بالقبول مبدئيا
                       </MenuItem>
-                      <MenuItem  value="حضي بالقبول نهائيا" dir="rtl">
-                      حضي بالقبول نهائيا
+                      <MenuItem  value="حضي مطلبكم بالقبول" dir="rtl">
+                      حضي مطلبكم بالقبول
                       </MenuItem>
               </TextField>
         </TableCell>
