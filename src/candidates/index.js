@@ -10,10 +10,10 @@ import TabList from "@material-ui/lab/TabList";
 import TabPanel from "@material-ui/lab/TabPanel";
 //Components
 import SubmittedList from "./components/SubmittedList";
-import RejectedList from "./components/RejectedList";
-import WaitingList from "./components/WaitingList";
-import InitialList from "./components/InitialList";
-import FinalList from "./components/FinalList";
+// import RejectedList from "./components/RejectedList";
+// import WaitingList from "./components/WaitingList";
+// import InitialList from "./components/InitialList";
+// import FinalList from "./components/FinalList";
 //utlils
 import Navbar from "../utils/Navbar";
 //Redux
@@ -103,7 +103,7 @@ function Candidates(props) {
               <TabPanel value='1'>
                 <SubmittedList />
               </TabPanel>
-              <TabPanel value='2'>
+              {/* <TabPanel value='2'>
                 <RejectedList />
               </TabPanel>
               <TabPanel value='3'>
@@ -114,7 +114,7 @@ function Candidates(props) {
               </TabPanel>
               <TabPanel value='5'>
                 <FinalList />
-              </TabPanel>
+              </TabPanel> */}
             </TabContext>
           </div>
         </Container>
