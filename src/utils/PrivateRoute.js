@@ -4,17 +4,17 @@ import { connect } from "react-redux";
 const PrivateRoute = ({ component: Component, admin, ...rest }) => (
   <Route
     {...rest}
-    render={props =>
-        localStorage.accessToken  ? (
+    render={(props) =>
+      localStorage.accessToken ? (
         <Component {...props} />
       ) : (
-        <Redirect to="/login" />
+        <Redirect to='/login' />
       )
     }
   />
 );
 
-const mapStateToProps = state => ({
-    admin: state.admin
+const mapStateToProps = (state) => ({
+  admin: state.admin,
 });
 export default connect(mapStateToProps)(PrivateRoute);
