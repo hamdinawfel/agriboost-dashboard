@@ -1,11 +1,10 @@
 import React from "react";
-//M-UI
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
-//Components
+
 import Header from "./components/Header";
-//utils
+import Reclamations from "../reclamations";
 import Navbar from "../utils/Navbar";
 
 const useStyles = makeStyles((theme) => ({
@@ -37,6 +36,7 @@ export default function Dashboard(props) {
         <div className={classes.appBarSpacer} />
         <Container maxWidth='lg' className={classes.container}>
           <Header />
+          <Reclamations />
         </Container>
       </main>
     </div>
