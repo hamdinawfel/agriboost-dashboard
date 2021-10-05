@@ -25,6 +25,11 @@ function Reclamations(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     columns: [
+      {
+        title: "التاريخ",
+        field: "date",
+        render: (rowData) => <span>{rowData.createdAt.split("T")[0]}</span>,
+      },
       { title: "الإسم", field: "firstName" },
       { title: "اللقب", field: "lastName" },
       { title: "ب٠ت٠و	", field: "cin" },
@@ -45,19 +50,28 @@ function Reclamations(props) {
     <div className={classes.root}>
       <main className={classes.content}>
         <Container maxWidth='lg' className={classes.container}>
-          <MaterialTable
-            title='Réclamations'
-            columns={state.columns}
-            data={props.reclamations.data}
-            isLoading={props.reclamations.loading}
-            editable={{
-              onRowDelete: (oldData) =>
-                new Promise((resolve) => {
-                  handleDelete(oldData._id);
-                  resolve();
-                }),
-            }}
-          />
+          {props.admin.user.root ? (
+            <MaterialTable
+              title='Réclamations'
+              columns={state.columns}
+              data={props.reclamations.data}
+              isLoading={props.reclamations.loading}
+              editable={{
+                onRowDelete: (oldData) =>
+                  new Promise((resolve) => {
+                    handleDelete(oldData._id);
+                    resolve();
+                  }),
+              }}
+            />
+          ) : (
+            <MaterialTable
+              title='Réclamations'
+              columns={state.columns}
+              data={props.reclamations.data}
+              isLoading={props.reclamations.loading}
+            />
+          )}
         </Container>
       </main>
     </div>
@@ -66,6 +80,7 @@ function Reclamations(props) {
 
 const mapStateToProps = (state) => ({
   reclamations: state.reclamations,
+  admin: state.admin,
 });
 const mapActionsToProps = {
   getReclamations,

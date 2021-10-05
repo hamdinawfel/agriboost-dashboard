@@ -47,7 +47,7 @@ function Header(props) {
     props.getRejectedCount();
     props.getWaitedCount();
     props.getFinalCount();
-  });
+  }, []);
 
   return (
     <Grid container spacing={3}>
