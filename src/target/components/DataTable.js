@@ -152,7 +152,15 @@ function Row(props) {
               <Grid container>
                 <Grid item xs={12}>
                   <Title title='الحالة الإجتماعية' />
-                  <SocialInfo criteriaList={row.criteriaList} />
+                  <SocialInfo
+                    candidateTreatmentCard={row.candidateTreatmentCard}
+                    isCandidateHaveChildren={row.isCandidateHaveChildren}
+                    isCandidateHaveSiblings={row.isCandidateHaveSiblings}
+                    isCandidateHaveAnetiInscription={
+                      row.isCandidateHaveAnetiInscription
+                    }
+                    unemploymentScore={row.unemploymentScore}
+                  />
                 </Grid>
                 <Grid item xs={6} style={{ padding: "0 5px" }}>
                   <Title title='المعطيات الشخصية' />
@@ -162,19 +170,28 @@ function Row(props) {
                     cin={row.cin}
                     fingerPrint={row.fingerPrint}
                     birthDay={row.birthDay}
+                    village={row.village}
+                    address={row.address}
                     sexe={row.sexe}
+                    civilStatus={row.civilStatus}
+                    phone={row.phone}
+                    email={row.email}
                   />
                 </Grid>
                 <Grid item xs={6} style={{ padding: "0 5px" }}>
                   <Title title='المعطيات التكميلية' />
                   <SupplementaryInfo
-                    city={row.city}
-                    village={row.village}
-                    address={row.address}
-                    civilStatus={row.civilStatus}
                     edicationalLevel={row.edicationalLevel}
                     lastStadyLevel={row.lastStadyLevel}
-                    email={row.email}
+                    isCandidateHaveCnss={row.isCandidateHaveCnss}
+                    snssDuration={row.snssDuration}
+                    cnssId={row.cnssId}
+                    isCandidateHavePatente={row.isCandidateHavePatente}
+                    patenteDuration={row.patenteDuration}
+                    patenteId={row.patenteId}
+                    isCandidateHaveAnetiInscription={
+                      row.isCandidateHaveAnetiInscription
+                    }
                   />
                 </Grid>
               </Grid>
