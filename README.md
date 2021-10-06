@@ -11,3 +11,11 @@
 | material-ui|   4.11.0    |   
 | material-table|  1.69.2    |  
 
+## Installation
+
+```
+
+npm install
+npm start
+
+```
