@@ -14,8 +14,15 @@
 ## Installation
 
 ```
-
+git clone https://github.com/HamdiNawfel/agriboost-dashboard.git
 npm install
 npm start
 
+```
+
+## Environment variables
+
+
+```
+REACT_APP_API_URL=http://api_url...
 ```
