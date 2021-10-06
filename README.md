@@ -26,3 +26,6 @@ npm start
 ```
 REACT_APP_API_URL=http://api_url...
 ```
+## Features
+* feature
+* Profit!
