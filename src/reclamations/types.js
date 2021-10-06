@@ -1,0 +1,4 @@
+export const LOADING = "LOADING";
+export const GET_RECLAMATIONS = "GET_RECLAMATIONS";
+export const DELETE_RECLAMATION = "DELETE_RECLAMATION";
+export const SET_ERROR = "SET_ERROR";
