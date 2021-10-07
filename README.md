@@ -46,4 +46,30 @@ for more details about this features.
 * As an **admin**, I want to be able to **get the requested reclamations** so that I can **contact them to resolve there requests** 
 * As an **root admin**, I want to *only* be able to **to delete a reclamations** so that I can **keep track the candidates problem** 
 
+## Folder Structure
 
+```
+src
+├── assets
+├── pages
+│   ├── candidates
+│   │   ├── components
+│   │   ├── actions.js
+│   │   ├── index.js
+│   │   ├── reducer.js
+│   │   └── types.js
+│   │
+│   └── ...
+│       
+├── redux
+│    ├── RootReducer.js
+│    └── Store.js  
+│
+├── utils
+│    ├── Navbar
+│    :
+│    └──...
+│      
+├── App.js   
+└── index.js
+```
