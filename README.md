@@ -94,18 +94,11 @@ src
 
 ![Mark Down](https://lh3.googleusercontent.com/0w7MJ9d53Gwh5AQavzJCcLuB2XRF_9h_jfTakU67VJY06gga5tjbUghyvQRqFQDO0e3WGWifYwBo5JnvkvfxSr-YryE-4AxU9h8jJP5B5ndLfYxZ59rmFU3AvWI0dKAtfzGGnbAbUMRa7K-zlAujiCBZL5ee7VMaveucgMH5-WzsZ67yfmd82g9ODYUXJixA9syRyC1SX4OUFpHTsvTEz3R0IQ0DdjfY_o5X-tdyWIJ8MDfBMRDbNibDjjR7G7G02CoYd8pcbiEEDkGcbPclWBu0Xyi2yyDYrWJm_BobYz_Qs-6A69CtDs5svM9r0dUXqoAr3pU6We5iHkGv5BQAA89ERiyy-0wLFVzpIddz2BiD59YthW2lhZXgiXuS-7sHZVfr_08-qRBDsCjvopa2GmUXGMaPP_pWeHa2As0sDk8Lsbs7_wG5JKBirjrhxrNjK3mdhi_OGUlVdYTmzOVsRTD0KThwh2ePYxmU-n-FOHTV2PN1hH0pC6QGJQ3JzaYbgt0Ik_a9E6gDVihw2Br2Fs9iO9yF1-5kjETbAjfAXUgd545rZULBrlH7CMAU7OeW5qMVz5d8KC915EKuEQuXUUBU8fvSsR8a452fHLQ106daK8gKb6_Nl8gtIYhups0vF9y7jm2lds6sys9T-bNSndOwBQ-TUQvqWKSDf5LU6_AdKrtBeO2uLUkuTQdbvDQwDXQYsoXMp6jiQsoNVJPeeuaG=w1360-h620-no?authuser=0)
 
-<details>More Screenshots
-  Dashboard Page
-  <img src="https://lh3.googleusercontent.com/pw/AM-JKLV2fn5_HG7UQOfkgG7o5iSxn4HZH-xVtKBem_db3luxr1ck8j5rqLvj7xzaqL7wucAn7dxtDd2tE2GitHeWdVhGnFkVEYJk8uX43LCqYeW3Gsp8mrGeue6mAird6oL1DWkhJ4B5zd299zyUXColVvsV=w1360-h620-no?authuser=0" style="max-width: 100%;">
-  
-<p>Booking Invitations
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/georgesimos/readme-assets/blob/master/cinema-plus/invitation.png"><img src="https://github.com/georgesimos/readme-assets/raw/master/cinema-plus/invitation.png" style="max-width: 100%;"></a></p>
-
-</details>
 
 <details markdown=block>
 <summary markdown=span>More Screenshots</summary>
-Dashboard Page
+* Dashboard Page
   <img src="https://lh3.googleusercontent.com/pw/AM-JKLV2fn5_HG7UQOfkgG7o5iSxn4HZH-xVtKBem_db3luxr1ck8j5rqLvj7xzaqL7wucAn7dxtDd2tE2GitHeWdVhGnFkVEYJk8uX43LCqYeW3Gsp8mrGeue6mAird6oL1DWkhJ4B5zd299zyUXColVvsV=w1360-h620-no?authuser=0" style="max-width: 100%;">
-  
+* Candidates Page
+   <img src="https://lh3.googleusercontent.com/8xqsKZgbsdp7Xw6f0mOclUzeCHwpErHNeBaDLZNvaoixVSR-t6CyA8ev6S_G2602msiogyioE_ZMEyRelj5dWt66sB0lAvTQ4i9jjdWV2ujnazzX8AtgwDx0R75QJgi2rq_htvRcsF-129ZhQBhhdhBxYT0gfJafn8nn7DglijgLI8NAZBKRji9pRWrjkwvu8AJGOA13g1vmLXd8Gap_hMY0FlAVFzT6zo3THpbODiqhVB6dwxT50NVPSBuntc7DDD8_52G9rKZhlQB8_hQXlcJxd6-4ZCRTkCNTjvHIJkiFq8yb6U3OQiCYZvLp4pYz9MEJ8lJVA82XjQNVQV7rDtzNkk4t1xeafNcx9ey7mQBObSmIPVjgoiAhyzIPeGo4CTyzqhMEmmihBWqEYUTprsFP9U6JK1zUKPmAMQwQEtVNz5ik6ooPSlOytqHWAgnhn_o98-Wp7iengnNu-9j12AXR3pV57RVntR42JNINNIuMgmfWmjwLwKPOUoDKfdUXJrgKevB5a1lBEZmYOXxRrOxFhgN2SGsjBvs_f4dU625WF-3LVHRvQdgLufPCzpCHC5_aGvAq2kjjvcYDMYjJORuYRb-pl8Hll8qpqDrMgthqHGRpb2G_t83Kc-8iYKYUKacrLD6Cz6gspCMSAArGCZ4X1f29M_qevFK7DuZr_cxFwxGkUQetKDRpSeNtOM8IANFC5QSYCFDxoq7EM-_3PCyh=w1363-h625-no?authuser=0" style="max-width: 100%;">
 </details>
