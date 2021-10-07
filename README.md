@@ -86,11 +86,19 @@ src
 ├── App.js   
 └── index.js
 ```
-# Contents from the '/media/user/README_1.md' markdown file:
+## collapsible markdown?
 
-Read more [here](./README_2.md) # It works!
-Read more [here](file:///media/user/README_2.md) # Doesn't work
-Read more [here](/media/user/README_2.md) # Doesn't work
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
 
 
 
