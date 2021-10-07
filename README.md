@@ -98,10 +98,12 @@ src
 <details><summary>see More Screenshots</summary>
  
 </details>
-<details markdown=block>
-<summary markdown=span>A *Summary*</summary>
-These are the **details** for this item.
-  ![Mark Down](https://lh3.googleusercontent.com/0w7MJ9d53Gwh5AQavzJCcLuB2XRF_9h_jfTakU67VJY06gga5tjbUghyvQRqFQDO0e3WGWifYwBo5JnvkvfxSr-YryE-4AxU9h8jJP5B5ndLfYxZ59rmFU3AvWI0dKAtfzGGnbAbUMRa7K-zlAujiCBZL5ee7VMaveucgMH5-WzsZ67yfmd82g9ODYUXJixA9syRyC1SX4OUFpHTsvTEz3R0IQ0DdjfY_o5X-tdyWIJ8MDfBMRDbNibDjjR7G7G02CoYd8pcbiEEDkGcbPclWBu0Xyi2yyDYrWJm_BobYz_Qs-6A69CtDs5svM9r0dUXqoAr3pU6We5iHkGv5BQAA89ERiyy-0wLFVzpIddz2BiD59YthW2lhZXgiXuS-7sHZVfr_08-qRBDsCjvopa2GmUXGMaPP_pWeHa2As0sDk8Lsbs7_wG5JKBirjrhxrNjK3mdhi_OGUlVdYTmzOVsRTD0KThwh2ePYxmU-n-FOHTV2PN1hH0pC6QGJQ3JzaYbgt0Ik_a9E6gDVihw2Br2Fs9iO9yF1-5kjETbAjfAXUgd545rZULBrlH7CMAU7OeW5qMVz5d8KC915EKuEQuXUUBU8fvSsR8a452fHLQ106daK8gKb6_Nl8gtIYhups0vF9y7jm2lds6sys9T-bNSndOwBQ-TUQvqWKSDf5LU6_AdKrtBeO2uLUkuTQdbvDQwDXQYsoXMp6jiQsoNVJPeeuaG=w1360-h620-no?authuser=0)
-</details>
+<details>
+  <summary>More Screenshots</summary>
+  Booking Page
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/georgesimos/readme-assets/blob/master/cinema-plus/booking.png"><img src="https://github.com/georgesimos/readme-assets/raw/master/cinema-plus/booking.png" style="max-width: 100%;"></a>
+<p>Booking Invitations
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/georgesimos/readme-assets/blob/master/cinema-plus/invitation.png"><img src="https://github.com/georgesimos/readme-assets/raw/master/cinema-plus/invitation.png" style="max-width: 100%;"></a></p>
 
+</details>
 
