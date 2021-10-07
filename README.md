@@ -4,7 +4,7 @@
 
 ## Content
 
-**[1. Markdown](#heading--1)**
+**[1. Technologies](#heading--1)**
 
   * [1.1. Markdown formatting cheatsheet](#heading--1-1)
   * [1.2. Markdown formatting details](#heading--1-2)
@@ -18,7 +18,7 @@
   * [2.2. Lists, Images, Code](#heading--2-2)
   * [2.3. Special features](#heading--2-3)
   
-
+## 1. Technologies <a name="heading--1"/>
 ## Technologies
 
 |     Technologie    |     Version     | 
