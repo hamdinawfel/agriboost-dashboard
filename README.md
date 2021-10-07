@@ -1,5 +1,6 @@
 # Agriboost dashboard
 
+![Ore Stars](https://img.shields.io/ore/stars/stars?color=%23b6e550&logo=stars&logoColor=%23b6e550&style=flat-square)
 >Agriboost dashboard for managing business event candidates
 
 ## Content
@@ -26,6 +27,7 @@
 | redux      |   4.0.5    |   
 | material-ui|   4.11.0    |   
 | material-table|  1.69.2    |  
+| react-to-pdf |  0.0.14   |  
 
 ## 2. Installation <a name="heading--2"/>
 
