@@ -97,7 +97,7 @@ src
 <details>
   <summary>More Screenshots</summary>
   Dashboard Page
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/georgesimos/readme-assets/blob/master/cinema-plus/booking.png"><img src="https://photos.app.goo.gl/KHQQk667p6xnauY96" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/georgesimos/readme-assets/blob/master/cinema-plus/booking.png"><img src="https://lh3.googleusercontent.com/pw/AM-JKLV2fn5_HG7UQOfkgG7o5iSxn4HZH-xVtKBem_db3luxr1ck8j5rqLvj7xzaqL7wucAn7dxtDd2tE2GitHeWdVhGnFkVEYJk8uX43LCqYeW3Gsp8mrGeue6mAird6oL1DWkhJ4B5zd299zyUXColVvsV=w1360-h620-no?authuser=0" style="max-width: 100%;"></a>
 <p>Booking Invitations
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/georgesimos/readme-assets/blob/master/cinema-plus/invitation.png"><img src="https://github.com/georgesimos/readme-assets/raw/master/cinema-plus/invitation.png" style="max-width: 100%;"></a></p>
 
