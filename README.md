@@ -5,9 +5,13 @@
 ## Content
 
 **[1. Technologies](#heading--1)**
+
 **[2. Installation](#heading--2)**
+
 **[3. Environment variables](#heading--3)**
+
 **[4. Features](#heading--4)**
+
 **[5. Folder Structure](#heading--5)**
 
 ## 1. Technologies <a name="heading--1"/>
@@ -37,7 +41,7 @@ REACT_APP_API_URL=http://api_url...
 ## 4. Features <a name="heading--4"/>
 
 > Dashboard features are written us user stories forme `As a [type of user], I want [an action] so that [a benefit/a value]`
->
+
 > Please let me know if you want to access to the [product backlog](https://trello.com/b/6Z14DUQc/agriboost)
 for more details about this features.
 * As a **root admin**, I want to be able to **add other admins with an username and password** so that I can **keep the dashboard operations secure** 
