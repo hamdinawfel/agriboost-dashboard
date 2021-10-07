@@ -5,21 +5,13 @@
 ## Content
 
 **[1. Technologies](#heading--1)**
+**[2. Installation](#heading--2)**
+**[3. Environment variables](#heading--3)**
+**[4. Features](#heading--4)**
+**[5. Folder Structure](#heading--5)**
 
-  * [1.1. Markdown formatting cheatsheet](#heading--1-1)
-  * [1.2. Markdown formatting details](#heading--1-2)
-
-**[2. BBCode formatting](#heading--2)**
-
-  * [2.1. Basic text formatting](#heading--2-1)
-
-      * [2.1.1. Not so basic text formatting](#heading--2-1-1)
-
-  * [2.2. Lists, Images, Code](#heading--2-2)
-  * [2.3. Special features](#heading--2-3)
-  
 ## 1. Technologies <a name="heading--1"/>
-## Technologies
+
 
 |     Technologie    |     Version     | 
 | ------------- | :-----------: | 
@@ -28,7 +20,7 @@
 | material-ui|   4.11.0    |   
 | material-table|  1.69.2    |  
 
-## Installation
+## 2. Installation <a name="heading--2"/>
 
 ```
 git clone https://github.com/HamdiNawfel/agriboost-dashboard.git
@@ -37,13 +29,13 @@ npm start
 
 ```
 
-## Environment variables
-
+## 3. Environment variables <a name="heading--3"/>
 
 ```
 REACT_APP_API_URL=http://api_url...
 ```
-## Features
+## 4. Features <a name="heading--4"/>
+
 > Dashboard features are written us user stories forme `As a [type of user], I want [an action] so that [a benefit/a value]`
 >
 > Please let me know if you want to access to the [product backlog](https://trello.com/b/6Z14DUQc/agriboost)
@@ -63,7 +55,7 @@ for more details about this features.
 * As an **admin**, I want to be able to **get the requested reclamations** so that I can **contact them to resolve there requests** 
 * As an **root admin**, I want to *only* be able to **to delete a reclamations** so that I can **keep track the candidates problem** 
 
-## Folder Structure
+## 5. Folder Structure <a name="heading--5"/>
 
 ```
 src
@@ -90,5 +82,5 @@ src
 ├── App.js   
 └── index.js
 ```
-### 1.1. Markdown formatting cheatsheet <a name="heading--1-1"/>
+
 
