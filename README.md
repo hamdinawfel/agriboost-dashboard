@@ -40,7 +40,7 @@ REACT_APP_API_URL=http://api_url...
 ```
 ## 4. Features <a name="heading--4"/>
 
-> Dashboard features are written us user stories forme `As a [type of user], I want [an action] so that [a benefit/a value]`
+> Dashboard features are written us *user stories* with this forme: `As a [type of user], I want [an action] so that [a benefit/a value]`
 
 > Please let me know if you want to access to the [product backlog](https://trello.com/b/6Z14DUQc/agriboost)
 for more details about this features.
