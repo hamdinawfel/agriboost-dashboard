@@ -103,3 +103,7 @@ src
 
 </details>
 
+<details markdown=block>
+<summary markdown=span>A *Summary*</summary>
+These are the **details** for this item.
+</details>
