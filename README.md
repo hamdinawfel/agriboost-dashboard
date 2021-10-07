@@ -86,8 +86,11 @@ src
 ├── App.js   
 └── index.js
 ```
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. [[MORE]] Pellentesque quis lacinia orci, vel fringilla quam. In vitae tortor vitae purus volutpat consequat. Pellentesque sagittis libero vitae hendrerit dignissim. Cras laoreet.
+# Contents from the '/media/user/README_1.md' markdown file:
 
+Read more [here](./README_2.md) # It works!
+Read more [here](file:///media/user/README_2.md) # Doesn't work
+Read more [here](/media/user/README_2.md) # Doesn't work
 
 
 
