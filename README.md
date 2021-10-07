@@ -1,7 +1,5 @@
 # Agriboost dashboard
 
-![Ore Stars](https://img.shields.io/ore/stars/stars?color=%23b6e550&logo=stars&logoColor=%23b6e550&style=flat-square)
->Agriboost dashboard for managing business event candidates
 
 ## Content
 
