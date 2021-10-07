@@ -92,8 +92,7 @@ src
 
 ## 6. Screenshots <a name="heading--6"/>
 
-![Mark Down](
-https://photos.app.goo.gl/RpqqyCYfuNUS1ht3A)
+![Mark Down](https://photos.app.goo.gl/RpqqyCYfuNUS1ht3A)
 
 <details><summary>CLICK ME</summary>
 <p>
