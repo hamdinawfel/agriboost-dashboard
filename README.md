@@ -2,6 +2,23 @@
 
 >Agriboost dashboard for managing business event candidates
 
+## Content
+
+**[1. Markdown](#heading--1)**
+
+  * [1.1. Markdown formatting cheatsheet](#heading--1-1)
+  * [1.2. Markdown formatting details](#heading--1-2)
+
+**[2. BBCode formatting](#heading--2)**
+
+  * [2.1. Basic text formatting](#heading--2-1)
+
+      * [2.1.1. Not so basic text formatting](#heading--2-1-1)
+
+  * [2.2. Lists, Images, Code](#heading--2-2)
+  * [2.3. Special features](#heading--2-3)
+  
+
 ## Technologies
 
 |     Technologie    |     Version     | 
@@ -73,3 +90,5 @@ src
 ├── App.js   
 └── index.js
 ```
+### 1.1. Markdown formatting cheatsheet <a name="heading--1-1"/>
+
