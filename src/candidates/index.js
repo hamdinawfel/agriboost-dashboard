@@ -80,7 +80,7 @@ function Candidates(props) {
                       value='2'
                     />
                     <Tab
-                      label={`قائمة الإنتضار  ${
+                      label={`قائمة الإنتظار  ${
                         value === "3" ? props.candidates.waitedCount : ""
                       }`}
                       value='3'

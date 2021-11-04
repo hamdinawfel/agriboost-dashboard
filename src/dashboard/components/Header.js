@@ -143,7 +143,7 @@ function Header(props) {
                 color: "#06B0C5",
               }}
               gutterBottom>
-              عدد المنتضرين
+              عدد المنتظرين
             </Typography>
           </div>
           {props.candidates.loadingWaitedCount ? (

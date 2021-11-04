@@ -127,8 +127,8 @@ function Row(props) {
               <MenuItem value='نأسف لعدم قبول مطلبكم' dir='rtl'>
                 نأسف لعدم قبول مطلبكم
               </MenuItem>
-              <MenuItem value='مطلبكم في قائمة الإنتضار' dir='rtl'>
-                مطلبكم في قائمة الإنتضار
+              <MenuItem value='مطلبكم في قائمة الإنتظار' dir='rtl'>
+                مطلبكم في قائمة الإنتظار
               </MenuItem>
               <MenuItem value='حضي مطلبكم بالقبول مبدئيا' dir='rtl'>
                 حضي مطلبكم بالقبول مبدئيا
