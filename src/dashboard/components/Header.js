@@ -12,7 +12,6 @@ import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
 import Skeleton from "./Skeleton";
 //Redux
 import { connect } from "react-redux";
-
 import {
   getSubmittedCount,
   getRejectedCount,
