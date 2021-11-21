@@ -47,7 +47,7 @@ function CandidateList(props) {
           <Pagination
             page={page}
             onChange={(e, page) => handleChangePage(page)}
-            count={Math.floor(props.candidates.loadingSubmittedCount / 11) + 1}
+            count={Math.floor(props.candidates.submittedCount / 11) + 1}
           />
         ) : null}
       </div>
