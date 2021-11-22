@@ -56,12 +56,12 @@ export default function SupplementaryInfo(props) {
           مدة الإنخراط بالصندوق الوطني للضمان الاجتماعي
         </Typography>
       </Grid>
-      <Grid item xs={4} className={classes.item}>
+      {/* <Grid item xs={4} className={classes.item}>
         <Typography component='p'>{props.cnssId}</Typography>
       </Grid>
       <Grid item xs={8} className={classes.item}>
         <Typography component='p'>المعرف الوحيد (ص و ض إ)</Typography>
-      </Grid>
+      </Grid> */}
       <Grid item xs={4} className={classes.item}>
         <Typography component='p'>{props.isCandidateHavePatente}</Typography>
       </Grid>
@@ -74,12 +74,12 @@ export default function SupplementaryInfo(props) {
       <Grid item xs={8} className={classes.item}>
         <Typography component='p'>مدة فعالية المعرف الجبائي</Typography>
       </Grid>
-      <Grid item xs={4} className={classes.item}>
+      {/* <Grid item xs={4} className={classes.item}>
         <Typography component='p'>{props.patenteId}</Typography>
       </Grid>
       <Grid item xs={8} className={classes.item}>
         <Typography component='p'>المعرف الجبائي</Typography>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }
