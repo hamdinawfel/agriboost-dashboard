@@ -75,7 +75,7 @@ function Row(props) {
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell component='th' scope='row'>
+        <TableCell align='left' size='small'>
           <span
             style={{
               fontWeight: 600,
@@ -85,7 +85,9 @@ function Row(props) {
               padding: "10px",
             }}>
             {props.index}
-          </span>{" "}
+          </span>
+        </TableCell>
+        <TableCell>
           {row.firstName} {row.lastName}
         </TableCell>
         <TableCell align='right'>{row.cin}</TableCell>
@@ -218,6 +220,7 @@ function DataTable(props) {
     <Table aria-label='collapsible table' size='small'>
       <TableHead style={{ background: "#eee" }}>
         <TableRow>
+          <TableCell />
           <TableCell />
           <TableCell>الإسم و اللقب</TableCell>
           <TableCell align='right'>ب٠ت٠و</TableCell>
