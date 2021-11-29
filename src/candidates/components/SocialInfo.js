@@ -6,7 +6,8 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 //Redux
 const firstOption = "بطاقة العلاج المجاني";
-const secondOption = "لا";
+const secondOption = "بطاقة علاج ذات التعريفة المنخفظة";
+const thirdOption = "لا";
 function UnemploymentDuration({ unemploymentScore }) {
   return (
     <React.Fragment>
@@ -46,7 +47,11 @@ export default function SocialInfo(props) {
             نوع بطاقة العلاج المنتفع بها
           </TableCell>
           <TableCell align='right'>
-            {props.candidateTreatmentCard === firstOption ? 4 : 3}
+            {props.candidateTreatmentCard === firstOption
+              ? 4
+              : props.candidateTreatmentCard === secondOption
+              ? 3
+              : 0}
           </TableCell>
         </TableRow>
         <TableRow style={{ borderBottom: "2px solid #f5f5f5" }}>
@@ -55,7 +60,7 @@ export default function SocialInfo(props) {
             أب أو أم لأبناء على مقاعد الدراسة
           </TableCell>
           <TableCell align='right'>
-            {props.isCandidateHaveChildren === secondOption ? 0 : 1}
+            {props.isCandidateHaveChildren === thirdOption ? 0 : 1}
           </TableCell>
         </TableRow>
         <TableRow style={{ borderBottom: "2px solid #f5f5f5" }}>
@@ -64,7 +69,7 @@ export default function SocialInfo(props) {
             هل لديك إخوة بأعمار دون 18 سنة
           </TableCell>
           <TableCell align='right'>
-            {props.isCandidateHaveSiblings === secondOption ? 0 : 1}
+            {props.isCandidateHaveSiblings === thirdOption ? 0 : 1}
           </TableCell>
         </TableRow>
         <TableRow style={{ borderBottom: "2px solid #f5f5f5" }}>
@@ -75,7 +80,7 @@ export default function SocialInfo(props) {
             مسجل لدى مكتب التشغيل و العمل المستقل
           </TableCell>
           <TableCell align='right'>
-            {props.isCandidateHaveAnetiInscription === secondOption ? 0 : 1}
+            {props.isCandidateHaveAnetiInscription === thirdOption ? 0 : 1}
           </TableCell>
         </TableRow>
         <TableRow style={{ borderBottom: "2px solid #f5f5f5" }}>
