@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #f5f5f5",
     display: "flex",
     alignItems: "center",
-    padding: "0 5px",
     justifyContent: "flex-end",
+    padding: "0 5px",
   },
 }));
 export default function SupplementaryInfo(props) {
@@ -27,59 +27,54 @@ export default function SupplementaryInfo(props) {
   return (
     <Grid container className={classes.container}>
       <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.edicationalLevel}</Typography>
+        <span>{props.edicationalLevel}</span>
       </Grid>
       <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>المستوى التعليمي</Typography>
+        <span>المستوى التعليمي</span>
       </Grid>
       <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.lastStadyLevel}</Typography>
+        <span>{props.lastStadyLevel}</span>
       </Grid>
       <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>
-          تاريخ الإنتهاء أو الإنقطاع عن الدراسة
-        </Typography>
+        <span>تاريخ الإنتهاء أو الإنقطاع عن الدراسة</span>
       </Grid>
       <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.isCandidateHaveCnss}</Typography>
+        <span>{props.isCandidateHaveCnss}</span>
       </Grid>
       <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>
-          الإنخراط بالصندوق الوطني للضمان الاجتماعي
-        </Typography>
+        <span>الإنخراط بالصندوق الوطني للضمان الاجتماعي</span>
+      </Grid>
+      <Grid
+        item
+        xs={4}
+        className={classes.item}
+        style={{
+          background: props.isCandidateHaveCnss === "لا" ? "#f5f5f5" : "#fff",
+        }}>
+        <span>{props.snssDuration}</span>
+      </Grid>
+      <Grid item xs={8} className={classes.item}>
+        <span>مدة الإنخراط بالصندوق الوطني للضمان الاجتماعي</span>
       </Grid>
       <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.snssDuration}</Typography>
+        <span>{props.isCandidateHavePatente}</span>
       </Grid>
       <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>
-          مدة الإنخراط بالصندوق الوطني للضمان الاجتماعي
-        </Typography>
+        <span>متحصل على معرف جبائي</span>
       </Grid>
-      {/* <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.cnssId}</Typography>
-      </Grid>
-      <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>المعرف الوحيد (ص و ض إ)</Typography>
-      </Grid> */}
-      <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.isCandidateHavePatente}</Typography>
-      </Grid>
-      <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>متحصل على معرف جبائي</Typography>
-      </Grid>
-      <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.patenteDuration}</Typography>
+      <Grid
+        item
+        xs={4}
+        className={classes.item}
+        style={{
+          background:
+            props.isCandidateHavePatente === "لا" ? "#f5f5f5" : "#fff",
+        }}>
+        <span>{props.patenteDuration}</span>
       </Grid>
       <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>مدة فعالية المعرف الجبائي</Typography>
+        <span>مدة فعالية المعرف الجبائي</span>
       </Grid>
-      {/* <Grid item xs={4} className={classes.item}>
-        <Typography component='p'>{props.patenteId}</Typography>
-      </Grid>
-      <Grid item xs={8} className={classes.item}>
-        <Typography component='p'>المعرف الجبائي</Typography>
-      </Grid> */}
     </Grid>
   );
 }
