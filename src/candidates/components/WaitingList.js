@@ -46,7 +46,7 @@ function WaitingList(props) {
           <Pagination
             page={page}
             onChange={(e, page) => handleChangePage(page)}
-            count={Math.floor(props.candidates.waitedCount / 11) + 1}
+            count={Math.floor(props.candidates.waitedCount / 10) + 1}
           />
         ) : null}
       </div>
